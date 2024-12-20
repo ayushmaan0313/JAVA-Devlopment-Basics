@@ -1,11 +1,14 @@
 public class Variables {
     public static void main(String[] args) {
+        final int a = 0;
         int b = 20;
-        for (int i = 1; i <= 5; i++) {
-            final int a = 10;
-            if (a < 20) {
-                a = (a + b);
-                System.out.println(a);
+        ///Infinite loop with a static variable (a)
+        for (int i = 0; i <= 5; i--, b++) {
+            int c = 0;
+            if (c < 20) {
+                c = (a + b);
+                System.out.println(c);
+                System.out.println(i);
             } else {
                 System.out.println("Wrong Input");
             }
